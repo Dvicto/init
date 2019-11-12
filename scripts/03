@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Who you wanna check?"
+read name
+if grep $name /etc/passwd
+then
+echo "The user $name found"
+else
+echo "The user $name doesn’t found"
+fi
